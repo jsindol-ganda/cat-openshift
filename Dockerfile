@@ -10,7 +10,7 @@ COPY . .
 
 RUN npm run build --prod
 
-FROM nginx:alpine
+FROM nginxinc/nginx-unprivileged
 
 COPY --from=BUILD_IMAGE /app/dist/my-cats/browser /usr/share/nginx/html
 
