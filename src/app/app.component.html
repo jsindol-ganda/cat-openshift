@@ -1,39 +1,59 @@
 <div class="container">
   <div class="row justify-content-center align-items-center g-2">
     <div class="col">
-      <button mat-button mat-raised-button (click)="doRandom()">Randomize cat!</button>
+      <button mat-button mat-raised-button (click)="doRandom()">
+        Randomize now!
+      </button>
     </div>
-    <div class="col">  
+    <div class="col">
       <div class="card_container p-4">
         <mat-card class="example-card">
           <mat-card-header>
-            <mat-card-title class="main_text">{{selectedCode.code + " - " + selectedCode.description}}</mat-card-title>
-            <mat-card-subtitle class="sub_text">{{selectedCode.category}}</mat-card-subtitle>
+            <mat-card-title class="main_text">{{
+              selectedCode.code + " - " + selectedCode.description
+            }}</mat-card-title>
+            <mat-card-subtitle class="sub_text">{{
+              selectedCode.category
+            }}</mat-card-subtitle>
           </mat-card-header>
-          <img mat-card-image [src]="animalImg" class="mw-50" alt="Photo of a Shiba Inu">
+          <img
+            mat-card-image
+            [src]="animalImg"
+            class="mw-50"
+            alt="Photo of a Shiba Inu"
+          />
           <mat-card-content class="my-4 text-light">
             <p>
-              {{selectedCode.meaning}}
+              {{ selectedCode.meaning }}
             </p>
           </mat-card-content>
         </mat-card>
       </div>
-     </div>
-    <!-- <div class="col">
+    </div>
+    <div class="col">
       <div class="card_container p-4">
         <mat-card class="example-card">
           <mat-card-header>
-            <mat-card-title class="main_text">{{selectedCodeTwo.code + " - " + selectedCodeTwo.description}}</mat-card-title>
-            <mat-card-subtitle class="sub_text">{{selectedCodeTwo.category}}</mat-card-subtitle>
+            <mat-card-title class="main_text">{{
+              selectedCodeTwo.code + " - " + selectedCodeTwo.description
+            }}</mat-card-title>
+            <mat-card-subtitle class="sub_text">{{
+              selectedCodeTwo.category
+            }}</mat-card-subtitle>
           </mat-card-header>
-          <img mat-card-image [src]="dogImg" class="mw-50" alt="Photo of a Shiba Inu">
+          <img
+            mat-card-image
+            [src]="dogImg"
+            class="mw-50"
+            alt="Photo of a Shiba Inu"
+          />
           <mat-card-content class="my-4 text-light">
             <p>
-              {{selectedCodeTwo.meaning}}
+              {{ selectedCodeTwo.meaning }}
             </p>
           </mat-card-content>
         </mat-card>
       </div>
-    </div> -->
+    </div>
   </div>
 </div>
